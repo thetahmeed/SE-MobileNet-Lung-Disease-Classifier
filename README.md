@@ -27,8 +27,7 @@ it on a mobile app that gives real-time visual explanations of
 our model’s predictions. We are hopeful about our model, which
 may be an optimal solution to lung disease detection at early
 stages and will make a benchmark contribution to the medical
-industry. The implemented codes are publicly available at the
-GitHub Link.
+industry.
 
 Keywords — Lung Disease, Squeeze-and-Excitation Block,
 Lightweight Deep Learning, MobileNet, Explainable AI
@@ -332,7 +331,7 @@ Department of Computer Science and Engineering
 City University, Bangladesh
 
 **Special Thanks:**  
-Heartfelt thanks to **Sraboni Ghosh Joya**, Lecturer  
+**Sraboni Ghosh Joya**, Lecturer  
 Department of Computer Science and Engineering  
 City University, Bangladesh
 
