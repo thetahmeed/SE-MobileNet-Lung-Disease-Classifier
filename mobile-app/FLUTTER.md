@@ -20,9 +20,9 @@ flutter doctor
 ```
 
 Ensure all checkmarks are green, especially:
-- ✅ Flutter SDK
-- ✅ Android toolchain
-- ✅ Android Studio / VS Code
+- Flutter SDK
+- Android toolchain
+- Android Studio / VS Code
 
 ### Step 3: Set up the Project
 
