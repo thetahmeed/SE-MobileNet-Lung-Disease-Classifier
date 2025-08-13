@@ -1,0 +1,8 @@
+loss-accuracy: 
+https://drive.google.com/drive/folders/1_rBPu4_YV1CSgsmNfkBwQb_Ec5DCfXhB?usp=sharing
+
+confusion-matrix:
+https://drive.google.com/drive/folders/1-o1GgRrz-NfNEHZSfnfF1J77yjiwQr0D?usp=sharing
+
+roc-curve: 
+https://drive.google.com/drive/folders/1NowegWzReRjpz9M3ESbS-byDIe-yVvrw?usp=sharing
