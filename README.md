@@ -53,8 +53,9 @@ Lightweight Deep Learning, MobileNet, Explainable AI
 ## Links
 - **Google Colab**: [Open](https://colab.research.google.com/github/thetahmeed/SE-MobileNet-Lung-Disease-Classifier/blob/main/model/main.ipynb)
 - **Dataset**: [Download](https://drive.google.com/file/d/1jMJy-Tn2warwOR5BDe3AtoY2HjOU2AUV/view?usp=sharing)
-- **Trained Models**: [Download](https://drive.google.com/drive/folders/1KlZj5lwCYudQVd9Ev4hCsyjQszGJGSNt?usp=sharing)
-- **Mobile App**: [Download](mobile-app/FLUTTER.md)
+- **Trained Weights**: [Download](https://drive.google.com/drive/folders/1KlZj5lwCYudQVd9Ev4hCsyjQszGJGSNt?usp=sharing)
+- **Mobile App (Android)**: [Download](https://drive.google.com/file/d/1a3BBbUdwkgJJTvrIkgJsGG0S90xiwQ3O/view?usp=sharing)
+
 - **Grad-CAM**: [Guide](#2-grad-cam-visualization-modelgrad_campy)
 - **Web Interface**: [Guide](#3-web-interface-modelgradio_apppy)
 
