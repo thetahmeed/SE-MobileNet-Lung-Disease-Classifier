@@ -1,0 +1,45 @@
+Our study used the “COVID19, Pneumonia and Normal Chest X-ray PA Dataset”
+released by Asraf et al. [1], which includes 4,575 posteroanterior (PA) chest X-
+ray images categorized into 1,525 COVID-19 cases, 1,525 pneumonia cases, and
+1,525 normal cases. The COVID-19 images were sourced from various repositories
+including GitHub [2], Radiopaedia, TCIA [3], SIRM [4], and supplemented by 912
+augmented images from Mendeley [5]. Images of pneumonia and normal cases were
+obtained from the Kaggle repository [6] and the NIH dataset [7]. A balanced and
+diverse dataset is essential for effectively training deep learning models, as it helps
+the model generalize better across different cases. However, the integration of data
+from various sources introduced challenges in processing the images.
+
+
+1. Z. A. Asraf and Z. Islam, Covid19, pneumonia and normal chest x-ray pa
+dataset, 2021.
+
+2. J. P. Cohen, P. Morrison, and L. Dao, “Covid-19 image data collection,” arXiv
+preprint arXiv:2003.11597, 2020.
+
+3. K. Clark, B. Vendt, K. Smith, et al., “The cancer imaging archive (tcia) –
+covid-19 cases,” The Cancer Imaging Archive (TCIA), 2020, Accessed: 2025-
+07-15. [Online]. Available: https://wiki.cancerimagingarchive.net/display/
+Public/COVID-19.
+
+4. Italian Society of Medical Radiology (SIRM) contributors, Covid-19 database
+from the italian society of medical radiology (sirm), Online dataset, Accessed:
+2025-07-15, 2020. [Online]. Available: https://www.sirm.org/category/senza-
+categoria/covid-19/.
+
+5. M. E. H. Chowdhury, T. Rahman, A. Khandakar, et al., Mendeley - covid-
+19 radiography database, version V1, Mendeley Data, 2020. doi: 10.17632/
+9xkhgts2s6 . 1. [Online]. Available: https : / / data . mendeley. com / datasets /
+9xkhgts2s6/1.
+
+6. D. Kermany, K. Zhang, and M. Goldbaum, “Labeled optical coherence to-
+mography (oct) and chest x-ray images for classification,” Cell, vol. 172, no. 5,
+1122–1131.e9, 2018. doi: 10 . 1016 / j . cell . 2018 . 02 . 010. [Online]. Available:
+https://www.cell.com/cell/fulltext/S0092-8674(18)30154-5.
+
+7. X. Wang, Y. Peng, L. Lu, Z. Lu, M. Bagheri, and R. M. Summers, “Chestx-
+ray8: Hospital-scale chest x-ray database and benchmarks on weakly-supervised
+classification and localization of common thorax diseases,” in Proceedings of
+the IEEE Conference on Computer Vision and Pattern Recognition (CVPR),
+Includes 108,948 frontal-view X-rays from 32,717 patients :cite[7], 2017, pp. 2097–
+2106. doi: 10.1109/CVPR.2017.369. [Online]. Available: https://arxiv.org/
+abs/1705.02315.
