@@ -33,7 +33,7 @@ An interpretable lightweight Squeeze-and-Excitation block-based deep learning mo
 ### Local Setup
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/SE-MobileNet-Lung-Disease-Classifier.git
+git clone https://github.com/thetahmeed/SE-MobileNet-Lung-Disease-Classifier.git
 cd SE-MobileNet-Lung-Disease-Classifier
 python3 -m venv venv
 source venv/bin/activate
