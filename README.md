@@ -1,29 +1,72 @@
-# SE-MobileNet Lung Disease Classifier
+# An interpretable lightweight squeeze-and-excitation block-based deep learning model for lung disease prediction
 
-An interpretable lightweight Squeeze-and-Excitation block-based deep learning model for lung disease prediction from chest X-ray images. This project implements SE-MobileNetV2 architecture to classify COVID-19, Pneumonia, and Normal conditions with high accuracy and visual explanations.
+Abstract—The term “lung disease” refers to any condition
+affecting the lungs that impairs their ability to function properly.
+Many disorders, such as asthma, COPD, infections like influenza,
+pneumonia, tuberculosis, lung cancer, and many other breathing
+problems, are common types of lung diseases around the world.
+Early detection and diagnosis are crucial for lung disease since it
+can cause loss of life. Along with the conventional clinical labora-
+tory methods, some DL models are widely used as computer-aided
+detection (CAD) for medical purposes to predict and classify
+diseases or any abnormalities. So we want to develop such a
+deep learning (DL) model, which will be more lightweight and
+less costly but more effective than any other existing DL models.
+We proposed to integrate the SE block into MobileNet to form
+the SE-MobileNet module-based model because, unlike the other
+basic CNNs that treat all feature channels equally, the SE block
+focuses on the most important features, and MobileNet works
+well on mobile devices with less power, as it is a lightweight
+version of CNN. By highlighting affected areas in lung images,
+this combination results in a simple, lightweight, smarter model
+to boost early lung disease prediction performance, which can be
+very useful in the healthcare field. We ran MobileNetV2 and our
+proposed SE-MobileNetV2 with accuracy values of 85.24% and
+92.89%, respectively. We also use Grad-CAM and then develop
+it on a mobile app that gives real-time visual explanations of
+our model’s predictions. We are hopeful about our model, which
+may be an optimal solution to lung disease detection at early
+stages and will make a benchmark contribution to the medical
+industry. The implemented codes are publicly available at the
+GitHub Link.
 
-## 🎯 Key Features
+Keywords — Lung Disease, Squeeze-and-Excitation Block,
+Lightweight Deep Learning, MobileNet, Explainable AI
 
+## Key Features
 - **High Accuracy**: 92.89% classification accuracy (vs 85.24% baseline MobileNetV2)
 - **Lightweight**: Optimized for mobile deployment with 90.9% size reduction
 - **Interpretable**: Grad-CAM visualization for model explainability
 - **Multi-Platform**: Web interface (Gradio), Android app (Flutter), and Colab integration
 - **Offline Capable**: TensorFlow Lite model for edge deployment
 
-## 🏗️ Architecture
-
+## Architecture
 - **Base Model**: MobileNetV2 with Squeeze-and-Excitation blocks
 - **Input**: 224×224×3 chest X-ray images
 - **Output**: 3-class classification (COVID-19, Normal, Pneumonia)
 - **Model Size**: 2.94 MB (TensorFlow Lite optimized)
 
-## 📁 Project Structure
+## Methodology
+
+![Methodology](https://res.cloudinary.com/danjv8onb/image/upload/v1755090064/Screenshot_2025-08-13_at_7.00.55_PM_trqsbh.png)
+
+## Links
+- **Google Colab**: [Open](https://colab.research.google.com/github/thetahmeed/SE-MobileNet-Lung-Disease-Classifier/blob/main/model/main.ipynb)
+- **Dataset**: [Download](https://drive.google.com/file/d/1jMJy-Tn2warwOR5BDe3AtoY2HjOU2AUV/view?usp=sharing)
+- **Trained Models**: [Download](https://drive.google.com/drive/folders/1KlZj5lwCYudQVd9Ev4hCsyjQszGJGSNt?usp=sharing)
+- **Mobile App**: [Download](mobile-app/FLUTTER.md)
+- **Grad-CAM**: [Guide](#2-grad-cam-visualization-modelgrad_campy)
+- **Web Interface**: [Guide](#3-web-interface-modelgradio_apppy)
+
+
+
+## Project Structure
 
 ```
 SE-MobileNet-Lung-Disease-Classifier/
 ├── dataset/
-│   ├── dataset.txt           # Google Drive link to dataset
-│   └── dataset_ref.txt       # Dataset reference information
+│   ├── dataset.txt          # Google Drive link to dataset
+│   └── dataset_ref.txt      # Dataset reference information
 ├── mobile-app/              # Flutter Android application
 │   ├── lib/
 │   │   └── main.dart        # Main Flutter application code
@@ -52,91 +95,16 @@ SE-MobileNet-Lung-Disease-Classifier/
 └── README.md                # This file
 ```
 
-## 📊 Performance
+## Getting Started
 
-| Model                  | Accuracy | Parameters | Size    |
-| ---------------------- | -------- | ---------- | ------- |
-| MobileNetV2 (Baseline) | 85.24%   | \-         | \-      |
-| SE-MobileNetV2 (Ours)  | 92.89%   | 2.28M      | 2.94 MB |
-
-## 🚀 Getting Started
-
-### 📥 Clone the Repository
+### Clone the Repository
 
 ```bash
 git clone https://github.com/thetahmeed/SE-MobileNet-Lung-Disease-Classifier.git
 cd SE-MobileNet-Lung-Disease-Classifier
 ```
 
-### 🔗 Quick Links
-
-- **Google Colab**: [Open In Colab](https://colab.research.google.com/github/thetahmeed/SE-MobileNet-Lung-Disease-Classifier/blob/main/model/main.ipynb)
-- **Dataset**: [Download from Google Drive](https://drive.google.com/file/d/1jMJy-Tn2warwOR5BDe3AtoY2HjOU2AUV/view?usp=sharing)
-- **Pre-trained Weights**: [Download from Google Drive](https://drive.google.com/drive/folders/1KlZj5lwCYudQVd9Ev4hCsyjQszGJGSNt?usp=sharing)
-
-## 📱 Mobile App Setup & Usage
-
-The project includes a Flutter Android application for real-time lung disease classification.
-
-### Prerequisites
-
-- **Flutter SDK** (3.8.1 or higher)
-- **Android Studio** or **VS Code** with Flutter extension
-- **Android SDK** (API level 21 or higher)
-- **Physical Android device** or emulator
-
-### Installation Steps
-
-1. **Install Flutter** following the [official guide](https://docs.flutter.dev/get-started/install)
-
-2. **Verify Flutter installation:**
-   ```bash
-   flutter doctor
-   ```
-
-3. **Navigate to the mobile app directory:**
-   ```bash
-   cd mobile-app
-   ```
-
-4. **Get Flutter dependencies:**
-   ```bash
-   flutter pub get
-   ```
-
-5. **Connect your Android device** or start an emulator
-
-6. **Check connected devices:**
-   ```bash
-   flutter devices
-   ```
-
-7. **Run the app:**
-   ```bash
-   # Debug mode (faster for development)
-   flutter run
-   
-   # Release mode (optimized performance)
-   flutter run --release
-   ```
-
-8. **Build APK for distribution:**
-   ```bash
-   flutter build apk --release
-   # APK will be in: build/app/outputs/flutter-apk/app-release.apk
-   ```
-
-### App Features
-
-- **📸 Camera Integration**: Capture chest X-ray images directly
-- **🖼️ Gallery Support**: Select images from device gallery
-- **🔍 Real-time Analysis**: Instant classification using TensorFlow Lite
-- **📊 Detailed Results**: Confidence scores and probability visualization
-- **🚀 Offline Operation**: No internet connection required
-
-For detailed setup instructions, see [`mobile-app/FLUTTER.md`](mobile-app/FLUTTER.md).
-
-## 🔬 Model Training & Analysis
+## Model Training & Analysis
 
 ### 1. Training the Model (`model/main.ipynb`)
 
@@ -172,6 +140,8 @@ The main Jupyter notebook contains the complete training pipeline for the SE-Mob
 - TensorFlow Lite conversion for mobile deployment
 
 ### 2. Grad-CAM Visualization (`model/grad_cam.py`)
+
+![Grad-CAM Visualization](https://res.cloudinary.com/danjv8onb/image/upload/v1755089349/grad-cam_k9mvnt.jpg)
 
 Generate visual explanations for model predictions using Gradient-weighted Class Activation Mapping.
 
@@ -248,7 +218,71 @@ Launch an interactive web interface for real-time lung disease classification.
 - **User-friendly Interface**: Clean, intuitive web interface
 - **Shareable**: Generate public links for demonstrations
 
-## 🛠️ Dependencies
+## Mobile App Setup & Usage
+
+![Mobile App Screenshot](https://res.cloudinary.com/danjv8onb/image/upload/v1755089275/mobile-app-ss_1_obj2vp.png)
+
+The project includes a Flutter Android application for real-time lung disease classification.
+
+### Prerequisites
+
+- **Flutter SDK** (3.8.1 or higher)
+- **Android Studio** or **VS Code** with Flutter extension
+- **Android SDK** (API level 21 or higher)
+- **Physical Android device** or emulator
+
+### Installation Steps
+
+1. **Install Flutter** following the [official guide](https://docs.flutter.dev/get-started/install)
+
+2. **Verify Flutter installation:**
+   ```bash
+   flutter doctor
+   ```
+
+3. **Navigate to the mobile app directory:**
+   ```bash
+   cd mobile-app
+   ```
+
+4. **Get Flutter dependencies:**
+   ```bash
+   flutter pub get
+   ```
+
+5. **Connect your Android device** or start an emulator
+
+6. **Check connected devices:**
+   ```bash
+   flutter devices
+   ```
+
+7. **Run the app:**
+   ```bash
+   # Debug mode (faster for development)
+   flutter run
+   
+   # Release mode (optimized performance)
+   flutter run --release
+   ```
+
+8. **Build APK for distribution:**
+   ```bash
+   flutter build apk --release
+   # APK will be in: build/app/outputs/flutter-apk/app-release.apk
+   ```
+
+### App Features
+
+- **Camera Integration**: Capture chest X-ray images directly
+- **Gallery Support**: Select images from device gallery
+- **Real-time Analysis**: Instant classification using TensorFlow Lite
+- **Detailed Results**: Confidence scores and probability visualization
+- **Offline Operation**: No internet connection required
+
+For detailed setup instructions, see [`mobile-app/FLUTTER.md`](mobile-app/FLUTTER.md).
+
+## Dependencies
 
 ### Python Requirements (`model/requirements.txt`)
 
@@ -275,36 +309,30 @@ dependencies:
   flutter_card_swiper: ^7.0.1
 ```
 
-## ⚠️ Important Notes
-
 ### Medical Disclaimer
-
 This application is for **educational and research purposes only**. It should **NOT** be used for actual medical diagnosis. Always consult qualified healthcare professionals for medical advice and diagnosis.
 
-### System Requirements
+### Contributors
 
-- **Python**: 3.8 or higher
-- **Flutter**: 3.8.1 or higher
-- **Android**: API level 21 or higher
-- **Memory**: Minimum 4GB RAM (8GB recommended for training)
-- **Storage**: 5GB free space for dataset and models
+**Authors:**
+1. **Md. Tahmeedul Islam**  
+   ID: 2125702012  
+   Department of Computer Science and Engineering  
+   City University, Bangladesh
 
-## 📞 Support & Troubleshooting
+2. **Shifa Somaiya Ritu**  
+   ID: 2125702012  
+   Department of Computer Science and Engineering  
+   City University, Bangladesh
 
-### Common Issues
+**Supervisor:**  
+**Diponkor Bala**, Lecturer  
+Department of Computer Science and Engineering  
+City University, Bangladesh
 
-1. **Flutter Setup**: Check [`mobile-app/FLUTTER_TROUBLESHOOTING.md`](mobile-app/FLUTTER_TROUBLESHOOTING.md)
-2. **Model Training**: Ensure sufficient Google Drive storage and GPU runtime in Colab
-3. **Dependencies**: Use virtual environments to avoid package conflicts
-4. **Memory Issues**: Close unnecessary applications during model training
-
-### Getting Help
-
-1. Check the specific README files in each directory
-2. Verify all prerequisites are installed
-3. Ensure downloaded files are in correct locations
-4. Review error messages for specific troubleshooting steps
+**Special Thanks:**  
+Heartfelt thanks to **Sraboni Ghosh Joya**, Lecturer  
+Department of Computer Science and Engineering  
+City University, Bangladesh
 
 ---
-
-**Built with ❤️ for advancing AI in healthcare diagnostics**
