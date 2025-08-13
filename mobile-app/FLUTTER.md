@@ -1,16 +1,3 @@
-# 📱 COVID-19 Chest X-Ray Classifier - Flutter Android App
-
-A native Android application built with Flutter for COVID-19 chest X-ray classification using TensorFlow Lite. This app runs **completely offline** on your Android device with no internet connection required.
-
-## ✨ Features
-
-- **📱 Native Android App** - Built with Flutter for smooth performance
-- **🔍 Real-time Classification** - Instant analysis using TensorFlow Lite
-- **📸 Multiple Input Sources** - Camera capture or gallery selection
-- **🚀 Offline Operation** - No internet connection required
-- **🎯 Three-Class Detection** - COVID-19, Normal, and Pneumonia
-- **📊 Detailed Results** - Confidence scores and probability visualization
-- **⚡ Optimized Model** - 2.94 MB TensorFlow Lite model (90.9% size reduction)
 
 ## 🛠️ Prerequisites
 
@@ -270,46 +257,3 @@ build/app/outputs/flutter-apk/app-release.apk
 # Install on connected device
 adb install build/app/outputs/flutter-apk/app-release.apk
 ```
-
-## ⚠️ Important Notes
-
-### Medical Disclaimer:
-This application is for **educational and research purposes only**. It should **NOT** be used for actual medical diagnosis. Always consult qualified healthcare professionals for medical advice and diagnosis.
-
-### Technical Requirements:
-- **Android 5.0** (API level 21) or higher
-- **64-bit ARM** processor (most modern Android devices)
-- **Minimum 2 GB RAM** for optimal performance
-- **Camera** for capturing X-ray images
-
-### Best Practices:
-- Use high-quality chest X-ray images
-- Ensure good lighting when capturing from another screen
-- Test with multiple images for consistent results
-- Keep the app updated with latest model versions
-
-## 🔄 Updates & Maintenance
-
-### Updating the Model:
-1. Replace `assets/covid_classifier.tflite` with new model
-2. Run `flutter pub get`
-3. Rebuild the app
-
-### Updating Dependencies:
-```bash
-flutter pub upgrade
-flutter clean
-flutter pub get
-```
-
-## 📞 Support
-
-For technical issues:
-1. Check Flutter installation: `flutter doctor`
-2. Verify Android setup: `flutter devices`
-3. Check model file exists: `ls assets/covid_classifier.tflite`
-4. Review Android permissions in manifest
-
----
-
-**Built with ❤️ using Flutter & TensorFlow Lite for Android** 
