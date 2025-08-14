@@ -316,12 +316,10 @@ This application is for **educational and research purposes only**. It should **
 
 **Authors:**
 1. **Md. Tahmeedul Islam**  
-   ID: 2125702012  
    Department of Computer Science and Engineering  
    City University, Bangladesh
 
 2. **Shifa Somaiya Ritu**  
-   ID: 2125702012  
    Department of Computer Science and Engineering  
    City University, Bangladesh
 
