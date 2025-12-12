@@ -1,34 +1,5 @@
 # An interpretable lightweight squeeze-and-excitation block-based deep learning model for lung disease prediction
 
-Abstract—The term “lung disease” refers to any condition
-affecting the lungs that impairs their ability to function properly.
-Many disorders, such as asthma, COPD, infections like influenza,
-pneumonia, tuberculosis, lung cancer, and many other breathing
-problems, are common types of lung diseases around the world.
-Early detection and diagnosis are crucial for lung disease since it
-can cause loss of life. Along with the conventional clinical labora-
-tory methods, some DL models are widely used as computer-aided
-detection (CAD) for medical purposes to predict and classify
-diseases or any abnormalities. So we want to develop such a
-deep learning (DL) model, which will be more lightweight and
-less costly but more effective than any other existing DL models.
-We proposed to integrate the SE block into MobileNet to form
-the SE-MobileNet module-based model because, unlike the other
-basic CNNs that treat all feature channels equally, the SE block
-focuses on the most important features, and MobileNet works
-well on mobile devices with less power, as it is a lightweight
-version of CNN. By highlighting affected areas in lung images,
-this combination results in a simple, lightweight, smarter model
-to boost early lung disease prediction performance, which can be
-very useful in the healthcare field. We ran MobileNetV2 and our
-proposed SE-MobileNetV2 with accuracy values of 85.24% and
-92.89%, respectively. We also use Grad-CAM and then develop
-it on a mobile app that gives real-time visual explanations of
-our model’s predictions. We are hopeful about our model, which
-may be an optimal solution to lung disease detection at early
-stages and will make a benchmark contribution to the medical
-industry.
-
 Keywords — Lung Disease, Squeeze-and-Excitation Block,
 Lightweight Deep Learning, MobileNet, Explainable AI
 
